@@ -1,0 +1,32 @@
+div {
+	width: 90%;
+	margin: auto;
+	padding-top: 10px;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+}
+
+.float-left {
+	float: left;
+	margin: 0 40px 0 0;
+	shape-outside: circle(120px at 100px 100px);
+}
+
+p {
+/*	display: inline;*/
+	text-align: justify;
+	font-size: 1em;
+}
+
+/*#right {
+	text-align: right;
+}*/
+
+.float-right {
+	float: right;
+	margin: 0 0 0 40px;
+	shape-outside: circle(120px at 140px 100px);
+}
