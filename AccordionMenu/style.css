@@ -1,0 +1,50 @@
+.menu {
+	margin: 5vw auto;
+	max-width: 700px;
+	width: 100%;
+	background: white;
+}
+
+.tab {
+	position: relative;
+	width: 100%;
+}
+
+.tab input {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: -999;
+}
+
+.tab label {
+	background: #72d2c6;
+	color: white;
+	display: block;
+	font-weight: bold;
+	line-height: 2;
+	padding-left: .5em;
+	margin-bottom: .5em;
+	transition: letter-spacing .55s;
+}
+
+.tab input:focus + label,
+.tab input:hover {
+	background: #85D8CE;
+	letter-spacing: 1px;
+}
+
+.tab-content{
+	max-height: 0;
+	overflow: hidden;
+	transition: all .35s;
+}
+
+.tab-content p {
+	margin: .25em 0 1.5em 0;
+}
+
+.tab input:checked ~ .tab-content {
+	max-height: 6.5em;
+}
